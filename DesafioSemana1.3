@@ -1,0 +1,15 @@
+package DesafiosSemana1;
+
+import java.util.Scanner;
+
+public class Desafio3 {
+    public static void main(String[] args) {
+        //Informar um saldo e imprimir o saldo com reajuste de 1%.
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe seu saldo");
+        double saldo = entrada.nextDouble();
+        double reajuste = saldo * 1.01;
+        System.out.printf("O saldo com reajuste é: %.2f", reajuste);
+        entrada.close();
+    }
+}
