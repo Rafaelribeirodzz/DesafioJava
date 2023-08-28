@@ -1,0 +1,18 @@
+package DesafiosSemana1;
+
+import java.util.Scanner;
+
+public class Desafio4 {
+    public static void main(String[] args) {
+        //Crie um algoritmo que leia o valor do salário mínimo e o valor do salário de um usuário,
+        //calcule a quantidade de salários mínimos esse usuário ganha e imprima o resultado.
+        //(1SM=R$788,00)
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Qual o valor do salario minimo?");
+        double salarioMinimo = entrada.nextDouble();
+        System.out.println("Qual o valor do salario?");
+        double salario = entrada.nextDouble();
+        System.out.printf("O usuario ganha %.2f salarios minimos", salario/salarioMinimo);
+        entrada.close();
+    }
+}
